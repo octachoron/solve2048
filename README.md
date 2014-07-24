@@ -38,7 +38,7 @@ Machines:
 No, not yet. A pluggable system similar to how Players and Machines are done is planned.
 
 ## How does the AI work?
-Currently, the strongest Player, HighestExpectedScorePlayer, essentially does a depth-first search of the state graph to calculate the expected value of the score in a few turns for each legal move, and chooses the one where it is highest. Less lookahead is done when there are a lot of empty cells, and each legal move is evaluated in parallel, to gain some speed on machines with parallel hardware. It does not stop when it gets the 2048 tile.
+Currently, the strongest Player, HighestExpectedScorePlayer, essentially does a depth-first search of the state graph to calculate the expected value of the score in a few turns for each legal move, and chooses the one where it is highest. (As it turns out, I reinvented the wheel with this approach, called an expectimax search. You learn something every day. :-) ) Less lookahead is done when there are a lot of empty cells, and each legal move is evaluated in parallel, to gain some speed on machines with parallel hardware. It does not stop when it gets the 2048 tile.
 
 ## Similar efforts
 There is at least [one](http://ov3y.github.io/2048-AI/).
