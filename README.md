@@ -8,7 +8,7 @@ An independent reimplementation of, and an AI for the recently popular game [204
 The repository contains a minimal Eclipse 3.8 project you can import, then follow the usual steps. There is no special configuration in the project, so importing the sources into a blank project in your favourite IDE should also work. There is no build script at the moment.
 
 ## How to play?
-Start the Solve2048 class. Without arguments, you'll get to a minimalistic text-based interface where you can play manually, similarly the original game. Rules and scoring should be the same.
+Start the Solve2048 class. Without arguments, you'll get to a minimalistic text-based interface where you can play manually, similarly to the original game. Rules and scoring should be the same.
 
 ## Command line arguments
 The program accepts at most two arguments. The first is the full class name of the Player implementation to use. This class determines what to do when it's the player's turn. The second argument is the full class name of the Machine implementation to use. This class determines what to do when it's the computer's turn. Choosing only the Machine implementation is currently not possible, but you can always choose the default Player as well. Starting the program with no arguments is equivalent to starting as
